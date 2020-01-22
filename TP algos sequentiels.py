@@ -2,25 +2,6 @@
 ### TP Algorithmes séquentiels ###
 ##################################
 
-"""
-Dans ce TP, on revient sur un certain nombre d'algorithmes dits séquentiels
-qui ont été vus dans les exercices de France IOI.
-
-On demande ici d'implémenter les fonctions données.
-
-On s'assurera des petits tests que ces fonctions fonctionnent. Pas besoin de
-générer des tests automatisés ici.
-
-Rappels : si t est un tableau 
-    + len(t) renvoie sa taille
-    + t[4] renvoie le 5eme élément du tableau
-    + les éléments de t sont numérotés de 0 à n-1 où n est la taille de t
-
-A rendre pour mardi 20/01 :
-    + ce fichier complété avec les traces de vos tests (antoine.becquet@ac-lyon.fr)
-    + 1 preuve de correction et 1 complexité de recherche, minimum et somme, sur copie ou en pdf
-    + faisable par groupe de 2 max
-"""
 
 
 #################
@@ -68,73 +49,6 @@ def moyenne(t):
         x+=i
     return x/l
 
-
-
-#########################
-### ESPACE DE LIBERTE ###
-#########################
-
-#Testez vos fonctions !
-
-#RECHERCHE
-"""
-from random import randint
-for j in range(10):
-    t=[]
-    for i in range(10):
-        t.append(randint(-150,150))
-    x = randint(-100,100)
-    t.sort()
-    if recherche(t,x):
-        print(x,"est dans",t)
-    else:
-       print(x,"n'est pas dans",t)
-"""
-
-#MINIMUM
-"""
-from random import randint
-for j in range(10):
-    t=[]
-    for i in range(10):
-        t.append(randint(-150,150))
-    t.sort() 
-    print("le minimum de t est",minimum(t))
-"""
-
-#MAXIMUM
-"""
-from random import randint
-for j in range(10):
-    t=[]
-    for i in range(10):
-        t.append(randint(-150,150))
-    t.sort()
-    print("le maximum de", t ,"est",maximum(t))
-"""
-
-
-#SOMME
-"""
-from random import randint
-for j in range(10):
-    t=[]
-    for i in range(3):
-        t.append(randint(-150,150))
-    t.sort()
-    print("la somme de", t,"est",somme(t))
-"""
-
-#MOYENNE
-"""
-from random import randint
-for j in range(10):
-    t=[]
-    for i in range(2):
-        t.append(randint(-150,150))
-    t.sort()
-    print("la moyenne de", t,"est",moyenne(t))
-"""
 
 
 
